@@ -11,10 +11,14 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.14.9",
+    "eslint": "^9.6.0",
+    "prettier-plugin-prisma": "^5.0.0",
+    "prisma": "^5.16.1",
     "tsx": "^4.16.2",
     "typescript": "^5.5.3"
   },
   "dependencies": {
+    "@prisma/client": "^5.16.1",
     "fastify": "^4.28.1"
   }
 }
