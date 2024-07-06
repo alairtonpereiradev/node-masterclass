@@ -1,0 +1,11 @@
+POST http:/localhost:3333/memories 
+content-type: application/json
+
+{
+    "content": "test" ,
+    "converURL": "https://github.com/alairtonpereiradev.png",
+    "isPublic": "1",
+}
+###
+
+GET http://localhost:3333/memories/4fd23e95-2ea8-4c90-8995-6893ca80d66f

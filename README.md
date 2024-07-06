@@ -100,5 +100,15 @@ npx prisma studio
 
 npm i @prisma/client
 
+# Validação de Identificador(ID)
+
+npm i zod
+
+# instalar plugins cors
+
+Tecnica de segurança para determiar quais endereços podem acessar o servidor.
+
+npm i @fastify/cors
+
 
 

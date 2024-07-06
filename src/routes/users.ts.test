@@ -1,0 +1,26 @@
+import { FastifyInstance } from "fastify";
+import { prisma } from "./lib/prima";
+
+// Codificação de Rotas da tabela de Usuários
+export async function usersRoutes(app: FastifyInstance) {
+    app.get('/users', async () =>{
+        const users = await prisma.user.findMany()
+        return users
+    })
+
+    app.get('/users/:id', async (req, res) => {
+
+    })
+
+    app.post('/users', async (req, res) => {
+
+    })
+
+    app.put('/users/:id', async (req, res) => {
+
+    })
+
+    app.delete('users/:id', async (req, res) => {
+
+    })
+}
