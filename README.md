@@ -12,21 +12,29 @@ curl -L https://npmjs.org/install.sh | sudo sh
 npm init -y
 
 # Instalar o typescript
+
 # Essa instalação so será util em ambiente de desenvolvimento
+
 npm i typescript -D
+
 npm i @types/node -D
 
 # configurar o typescript no projeto
+
 # cria o arquivo tsconfig.json
+
 Altere o target": "es2020", para a versão mais recente 
+
 npx tsc --init
 
 # Instalar o tsx converte automaticamente ts para js.
+
 npm i tsx -D
 
 Parametro -D-> significa colocar em dev
 
 # Alterar no package.json
+
 "scripts": {
     "dev": "tsx watch src/server.ts"
 
@@ -46,8 +54,10 @@ npm install eslint -D
 
 npm i @rocketseat/eslint-confg -D
 
-# corrigi erros 
+# corrigi erros de identação no codigo
+
 lint": "eslint src --ext .ts --fix"
+
 npm i lint
 
 # Prisma + SQLite
@@ -64,7 +74,8 @@ npx prisma -h
 
 npm i -D prettier-plugin-prisma
 
-# Criar o banco de dados local SQLite 
+# Criar o banco de dados local SQLite
+
 npx prisma init --datasource-provider SQLite
 
 # cria as tabelas no schema.prisma
